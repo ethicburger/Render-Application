@@ -3,4 +3,4 @@ services:
     name: flask-book-api
     runtime: python
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn app:app
+    startCommand: waitress-serve app:app
